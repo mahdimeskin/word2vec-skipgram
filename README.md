@@ -47,7 +47,7 @@ $$P(w_O \mid w_I) = rac{\exp({v'_{w_O}}^	op v_{w_I})}{\sum_{w=1}^{|V|} \exp({v'
 Mikolov et al. replace Softmax with Negative Sampling, turning the multi-class classification task into $k+1$ binary logistic regression tasks:
 
 $$\mathcal{L}_{SGNS} = -\log \sigma({v'_{w_O}}^	op v_{w_I}) - \sum_{i=1}^{k} \mathbb{E}_{w_i \sim P_n(w)} \left[ \log \sigma(-{v'_{w_i}}^	op v_{w_I}) 
-ight]$$
+\right]$$
 
 where:
 - $v_w$ and $v'_w$ are input (center) and output (context) vector representations of $w$.
