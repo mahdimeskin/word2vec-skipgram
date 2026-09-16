@@ -40,7 +40,7 @@ eq 0} \log P(w_{t+j} \mid w_t)$$
 where $c$ is the training context window size.
 
 ### 2. Negative Sampling (SGNS) Loss
-Computing standard Softmax requires summing over the entire vocabulary $V$, which is computationally expensive ($O(|V|)$):
+Computing standard Softmax requires summing over the entire vocabulary $V$, which is computationally expensive $O(|V|)$:
 
 $$P(w_O \mid w_I) = rac{\exp({v'_{w_O}}^	op v_{w_I})}{\sum_{w=1}^{|V|} \exp({v'_w}^	op v_{w_I})}$$
 
