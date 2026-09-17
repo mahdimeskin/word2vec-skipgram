@@ -78,7 +78,7 @@ $$
 
 For large vocabularies, this can be computationally expensive.
 
-Negative Sampling replaces the full multiclass prediction problem with a binary classification objective. For a positive center-context pair \((w_I, w_O)\), the model learns to distinguish the real context word from \(k\) randomly sampled negative words.
+Negative Sampling replaces the full multiclass prediction problem with a binary classification objective. For a positive center-context pair $\((w_I, w_O)\)$, the model learns to distinguish the real context word from $\(k\)$ randomly sampled negative words.
 
 The SGNS objective can be written as:
 
@@ -114,9 +114,9 @@ P_n(w)
 f(w)^{0.75},
 $$
 
-where \(f(w)\) is the frequency of word \(w\).
+where $\(f(w)\)$ is the frequency of word $\(w\)$.
 
-The \(0.75\) exponent smooths the raw frequency distribution. Frequent words still have a higher probability of being sampled, but their dominance is reduced compared with sampling directly from the unigram distribution.
+The $\(0.75\)$ exponent smooths the raw frequency distribution. Frequent words still have a higher probability of being sampled, but their dominance is reduced compared with sampling directly from the unigram distribution.
 
 The probabilities are normalized so that:
 
